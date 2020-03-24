@@ -19,6 +19,28 @@ os.system('clear')
 full_name = "Abhishek"
 age = 10
 
+########### #Strings ########################
+#string literals can have any value (concat of int or any data type to string)
+msg = f'{full_name} {age} bla bla'
+print (msg)
+
+######### String Methods ######
+
+print ("\nUpper --> " + msg.upper())
+print ("\nLower --> " + msg.lower())
+print ("\nCapitalize = first char of first word capital  --> " + msg.capitalize())
+print ("\nTitle = first char capital of each word  --> " + msg.title())
+print ("\nSwapcase will swap each char with opposite case --> " + msg.swapcase())
+print (f'Length of sting --> {len(msg)}')
+
+###### Range/Indexing/split/etc.. in String ######
+
+print (msg[5:10]) # print char at index 5 till 10 (range) inclusive
+print (msg.split(" ")) # print a new list of splitted string using space as a splitter
+print (msg.split(" ")[1])  # print list element at index 1 i.e 10
+print (msg.split(" ")[1:3]) # print list element in range # 3 is exclusive
+
+
 # LIST is like an array but can have any data type or multiple too.
 # we can also perform actions like add remove elemnets, etc..
 list_of_stuff = ["random", "shit", 1 , 1.234, True]
